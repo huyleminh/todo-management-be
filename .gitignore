@@ -1,0 +1,17 @@
+node_modules
+dist
+build
+package-lock.json
+
+*.env
+*.env.local
+
+*.log
+logs
+
+.DS_Store
+
+# Ignoring this folder is optional
+# configs
+
+*.http
