@@ -1,5 +1,5 @@
 import AppController from "./AppController";
-import DemoController from "./Demo/DemoController";
+import AuthController from "./auth/AuthController";
 
-const ControllerList: AppController[] = [new DemoController()];
+const ControllerList: AppController[] = [new AuthController()];
 export default ControllerList;

@@ -1,5 +1,5 @@
 {
-  "name": "hl-express-ts-boilerplate",
+  "name": "todo-management-be",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
@@ -20,17 +20,26 @@
   "author": "Huy Le Minh",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
+    "google-auth-library": "^7.14.0",
     "helmet": "^5.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^1.0.3",
     "moment": "^2.29.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "uuid": "^8.3.2",
     "winston": "^3.5.1",
     "winston-daily-rotate-file": "^4.6.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/uuid": "^8.3.4",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/morgan": "^1.9.3",
