@@ -17,6 +17,9 @@ export default class AuthController extends AppController {
     }
 
     init(): void {
+        this._router.get("/mobile", (req: IAppRequest, res: IAppResponse) => {
+            res.send("Hello mobile");
+        })
         this._router.get("/login/google", this.getLoginGoogleAsync);
         this._router.post("/token/refresh", this.postRefreshTokenAsync);
 

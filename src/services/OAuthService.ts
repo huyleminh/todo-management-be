@@ -1,7 +1,11 @@
 import { LoginTicket, OAuth2Client } from "google-auth-library";
 import Config from "../../configs/config";
 
-export default class OAuth2Service {
+export interface IOAuth2Service {
+    verifyToken(idToken: string): Promise<LoginTicket>;
+}
+
+export default class OAuth2Service implements IOAuth2Service {
     private _client: OAuth2Client;
     private readonly _clientId = Config.GOOGLE.GOOGLE_AUTH_CLIENT_ID;
 
